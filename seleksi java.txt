@@ -1,0 +1,37 @@
+package faruq;
+
+import static java.lang.System.in;
+import static java.lang.System.out;
+import java.util.Scanner;
+
+/**
+ *
+ * @author ASUS
+ */
+public class Faruq {
+
+    /**
+     * @param args the command line arguments
+     */
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+        int umur ;
+        String grade ;
+        Scanner Baca = new Scanner (in);
+        out.print ("umur :");
+        umur = Baca.nextInt();
+        
+        if (umur >17 ){
+            grade = "dewasa";
+        }
+        else if (umur <17){
+            grade = "anak anak";
+            
+        }
+        else {
+            grade = "kk";
+            
+        } 
+        
+        out.print("Grade ="+ grade);
+         {      

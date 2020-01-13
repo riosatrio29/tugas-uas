@@ -1,0 +1,23 @@
+/**
+ * File = suhu.java
+ * komversi suhu temperatur
+ */
+import java.util.Scanner;
+import static java.lang.System.out;      
+public class Suhu {
+
+    public static void main(String[] args) {
+       
+        Scanner Baca = new Scanner(System.in);
+        float c,r,f,k;
+        System.out.print("Celcius = ");c= Baca.nextFloat();
+        r = 4/5f*c; 
+        f=9/5f*c+32;
+        k=273+c;
+        out.println("Celcius   = "+c);
+        out.println("Reamur    = "+r);
+        out.println("Fahrenhit = "+f);
+        out.println("Kelvin    = "+k);
+    }
+    
+}

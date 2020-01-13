@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package method01;
+
+
+public class Method01 {
+
+    public static int a,b;
+    public static void init(){
+        a=0;b=0;
+    }
+    public static int tambah(){
+        return(a+b);
+    }
+    public static int kurang(){
+        return(a-b);
+    }
+    public static void cetak(int n){
+        System.out.println(n);
+    }
+    public static void main(String[] args) {
+       init();
+       System.out.println("a = "+a);
+       System.out.println("b = "+b);
+       a=5;b=7;
+       System.out.println(tambah());
+       System.out.println(kurang());
+       cetak(5);
+       cetak((3+tambah()));
+       cetak(kurang());
+    }
+    
+}
